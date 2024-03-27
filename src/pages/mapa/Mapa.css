@@ -1,0 +1,15 @@
+.sections {
+  background-color: red;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.seccion {
+  width: 95%;
+  height: 20vh;
+  margin: 10px auto;
+  background-color: aqua;
+}

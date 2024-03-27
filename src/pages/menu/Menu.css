@@ -1,0 +1,255 @@
+.header {
+  background-color: #665957;
+  height: 9vh;
+  width: 100%;
+  display: flex;
+}
+.header__perfil {
+  border: 2px solid #fac24e;
+  border-radius: 50%;
+  width: 20%;
+  background-image: url("../../assets/img/jugador.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__info {
+  width: 80%;
+  padding: 10px;
+}
+.header__info-title {
+  background-color: #fac24e;
+  height: 50%;
+  color: #000000;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.header__info-nivel {
+  height: 40%;
+  width: 90%;
+  padding-top: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #fff;
+}
+.header__info-nivel h5 {
+  padding-right: 20px;
+  font-size: 1rem;
+}
+
+progress {
+  width: 60%;
+  height: 15px;
+  border: solid 1px #333;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #fac24e;
+  border-radius: 8px;
+}
+
+progress::after {
+  content: attr(50) "%";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  font-weight: bold;
+}
+
+/*main*/
+.main {
+  height: 81vh;
+  width: 100%;
+  background-image: url("../../assets/img/menu.jpg");
+  background-repeat: no-repeat;
+  background-size: 110% 100%;
+  background-position: center;
+  position: relative;
+}
+
+.contenedor-heroe {
+  height: 81vh;
+  background-color: rgba(1, 1, 1, 0.8);
+  position: relative;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.contenedor-heroe--oculto {
+  display: none;
+}
+.texto-heroe {
+  position: absolute;
+  padding: 10px;
+  height: 40vh;
+  width: 60%;
+  bottom: 5vh;
+  left: 2vh;
+  background-color: #fac24e;
+  color: #000000;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+}
+.contenedor-heroe img {
+  position: absolute;
+  height: 60vh;
+  bottom: 0vh;
+  right: 2vh;
+}
+
+/*botones*/
+
+.contenedor-botones {
+  position: absolute;
+  height: 80vh;
+}
+
+.boton {
+  appearance: button;
+  background-color: #3f3e3c;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 120px;
+  text-decoration: none;
+}
+
+.boton:after {
+  background-clip: padding-box;
+  background-color: #fac24e;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.boton:main,
+.boton:focus {
+  user-select: auto;
+}
+
+.boton:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.boton:disabled {
+  cursor: auto;
+}
+
+.boton:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+.boton--biblioteca {
+  position: absolute;
+  top: 25vh;
+  left: 5vh;
+}
+.boton--cuartel {
+  position: absolute;
+  top: 34vh;
+  left: 24vh;
+}
+.boton--taberna {
+  position: absolute;
+  left: 5vh;
+  top: 52vh;
+}
+.boton--mapa {
+  position: absolute;
+  bottom: 10vh;
+  left: 24vh;
+}
+
+.boton--music {
+  position: absolute;
+  left: 33vh;
+  top: 10vh;
+  height: 3vh;
+  width: 100px;
+  padding-bottom: 30px;
+}
+
+/*FOOTER*/
+.footer {
+  height: 10vh;
+  width: 100%;
+  background-color: #665957;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  position: relative;
+  background-color: #665957;
+  border-radius: 50%;
+  background-size: cover;
+  height: 10vh;
+  margin-top: -30px;
+  width: 20%;
+  box-shadow: 10px -18px 15px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px -18px 15px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px -18px 15px -4px rgba(0, 0, 0, 0.75);
+}
+.btn__text {
+  text-align: center;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  color: white;
+}
+.btn--one {
+  background-image: url("../../assets/img/icono1.png");
+}
+.btn--two {
+  background-image: url("../../assets/img/icono2.png");
+}
+.btn--three {
+  background-image: url("../../assets/img/icono4.png");
+}
+.btn--four {
+  background-image: url("../../assets/img/icono3.png");
+}
