@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ComponentPortada from "../../../ComponentPortada";
 import backgroundImage from "../../../../assets/img/mapa/seccion1.jpg";
 import ComponentQuestion from "../ComponentQuestion";
@@ -6,13 +5,9 @@ import ComponentCorrection from "../ComponentCorrection";
 import ComponentCongratulation from "../ComponentCongratulation";
 import ComponentFinal from "../ComponentFinal";
 import { useSections } from "../../context/SectionContext";
+import { useQuiz } from "../../hook/useQuiz";
 
 const Seccion1 = () => {
-  const [start, setStart] = useState(false);
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [showCorrection, setShowCorrection] = useState(false);
-  const [showCongratulation, setShowCongratulation] = useState(false);
-  const [showFinal, setShowFinal] = useState(false);
   const { setVisibleTwo } = useSections();
 
   const preguntas = [
@@ -126,30 +121,19 @@ const Seccion1 = () => {
     },
   ];
 
-  const cambiarEstado = () => {
-    setStart(true);
-  };
-
-  const handleAnswer = (selectedOption) => {
-    if (selectedOption === preguntas[currentQuestion].respuestaCorrecta) {
-      setShowCongratulation(true);
-    } else {
-      setShowCorrection(true);
-    }
-  };
-
-  const handleNextQuestion = () => {
-    setShowCorrection(false);
-    setShowCongratulation(false);
-    if (currentQuestion < 8) {
-      setCurrentQuestion(currentQuestion + 1);
-    } else {
-      setShowFinal(true);
-    }
-  };
+  const {
+    start,
+    showCorrection,
+    showCongratulation,
+    showFinal,
+    cambiarEstado,
+    handleAnswer,
+    handleNextQuestion,
+    getCurrentQuestion,
+  } = useQuiz(preguntas);
 
   const renderQuestion = () => {
-    const { pregunta, opciones } = preguntas[currentQuestion];
+    const { pregunta, opciones } = getCurrentQuestion();
     return (
       <ComponentQuestion
         pregunta={pregunta}
@@ -167,7 +151,7 @@ const Seccion1 = () => {
   };
 
   const renderCorrection = () => {
-    const { correction } = preguntas[currentQuestion];
+    const { correction } = getCurrentQuestion();
     return (
       <ComponentCorrection
         correction={correction}
