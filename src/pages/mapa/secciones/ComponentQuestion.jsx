@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import ComponentLife from "./ComponentLife";
 
 const ComponentQuestion = ({
   pregunta,
@@ -7,9 +8,12 @@ const ComponentQuestion = ({
   opcion3,
   opcion4,
   handleAnswer,
+  decrementLife,
+  life,
 }) => {
   return (
     <>
+      <ComponentLife decrementLife={decrementLife} life={life} />
       <div>
         <p>{pregunta}</p>
       </div>
@@ -28,6 +32,8 @@ ComponentQuestion.propTypes = {
   opcion3: PropTypes.string.isRequired,
   opcion4: PropTypes.string.isRequired,
   handleAnswer: PropTypes.func.isRequired,
+  decrementLife: PropTypes.func.isRequired,
+  life: PropTypes.number.isRequired,
 };
 
 export default ComponentQuestion;

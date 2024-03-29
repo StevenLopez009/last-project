@@ -1,5 +1,5 @@
 import ComponentPortada from "../../../ComponentPortada";
-import backgroundImage from "../../../../assets/img/mapa/seccion13.jpg";
+import backgroundImage from "../../../../assets/img/mapa/seccion16.jpg";
 import ComponentQuestion from "../ComponentQuestion";
 import ComponentCorrection from "../ComponentCorrection";
 import ComponentCongratulation from "../ComponentCongratulation";

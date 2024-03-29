@@ -8,7 +8,7 @@ import { useSections } from "../../context/SectionContext";
 import { useQuiz } from "../../hook/useQuiz";
 
 const Seccion12 = () => {
-  const { setVisibleTherteen } = useSections();
+  const { setVisibleThirteen } = useSections();
 
   const preguntas = [
     {
@@ -125,7 +125,7 @@ const Seccion12 = () => {
   };
 
   const handleShowSection = () => {
-    setVisibleTherteen(true);
+    setVisibleThirteen(true);
   };
 
   const titulo = "Portal Fetch";

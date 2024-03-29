@@ -6,9 +6,14 @@ export const useQuiz = (preguntas) => {
   const [showCorrection, setShowCorrection] = useState(false);
   const [showCongratulation, setShowCongratulation] = useState(false);
   const [showFinal, setShowFinal] = useState(false);
+  const [life, setLife] = useState(6);
 
   const cambiarEstado = () => {
     setStart(true);
+  };
+
+  const decrementLife = () => {
+    setLife((prevLife) => prevLife - 1);
   };
 
   const handleAnswer = (selectedOption) => {
@@ -16,6 +21,7 @@ export const useQuiz = (preguntas) => {
       setShowCongratulation(true);
     } else {
       setShowCorrection(true);
+      decrementLife();
     }
   };
 
@@ -41,10 +47,12 @@ export const useQuiz = (preguntas) => {
 
   return {
     start,
+    life,
     currentQuestion,
     showCorrection,
     showCongratulation,
     showFinal,
+    decrementLife,
     cambiarEstado,
     handleAnswer,
     handleNextQuestion,
