@@ -14,6 +14,8 @@ const Seccion1 = () => {
     {
       pregunta:
         "Bienvenido a la isla. Estás en las playas de la introducción, es necesario saber  ¿qué es ECMA Script ? para poder avanzar.",
+      imagen:
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1701010794/lastproject/seccion1/ynxlesb4cztnas240ewk.png",
       opciones: [
         "Un lenguaje para desarrollo backend",
         "Un lenguaje para desarrollo movil",
@@ -27,6 +29,8 @@ const Seccion1 = () => {
     {
       pregunta:
         "Esa pregunta estaba muy facil ahora responde deseo declarar una constante ¿ como lo hago ?",
+      imagen:
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1701010794/lastproject/seccion1/ynxlesb4cztnas240ewk.png",
       opciones: [
         "constant nombre = valor;",
         "variable nombre = valor;",
@@ -40,6 +44,8 @@ const Seccion1 = () => {
     {
       pregunta:
         "No dejare que sigas avanzando, asi que te lo pondre un poco mas dificil , ¿Cual es la diferencia entre let y const ?",
+      imagen:
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1701010794/lastproject/seccion1/ynxlesb4cztnas240ewk.png",
       opciones: [
         "const es obsoleto y no se recomienda su uso. mientreas que let esta actualizado",
         "No hay diferencia, ambos se utilizan indistintamente.",
@@ -54,6 +60,8 @@ const Seccion1 = () => {
     {
       pregunta:
         "veo que has vencido a Medus , soy Tenacula si te crees muy bueno que retorna esta linea de codigo:  //console.log('Hola')",
+      imagen:
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1701010795/lastproject/seccion1/dn59rkehtjjrt3svbixe.png",
       opciones: [
         "No muestra ningun mensaje",
         "Regresa un mensaje en consola Hola",
@@ -67,6 +75,8 @@ const Seccion1 = () => {
     {
       pregunta:
         "Aqui te tengo un asertijo :  La isla de Javascript esta conectada con la isla de Html que etiqueta une estas dos islas ",
+      imagen:
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1701010795/lastproject/seccion1/dn59rkehtjjrt3svbixe.png",
       opciones: [
         "<JavaScript></JavaScript>",
         "<script><script/>",
@@ -80,6 +90,8 @@ const Seccion1 = () => {
     {
       pregunta:
         "En la isla existen varios datos primitivos de los que te muestro solo uno lo es ",
+      imagen:
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1701010795/lastproject/seccion1/dn59rkehtjjrt3svbixe.png",
       opciones: ["String", "Arreglo", "Función", "Objeto"],
       respuestaCorrecta: "String",
       correction:
@@ -88,6 +100,8 @@ const Seccion1 = () => {
     {
       pregunta:
         "soy Neptun espero que tengas suficientes vidas para terminar , si utilizo este operador == que estoy haciendo ",
+      imagen:
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1701010795/lastproject/seccion1/w7rhyvrteqxlwg2eg6dw.png",
       opciones: ["comparando", "igualando", "declarando", "creando"],
       respuestaCorrecta: "comparando",
       correction:
@@ -96,6 +110,8 @@ const Seccion1 = () => {
     {
       pregunta:
         "Estas a dos preguntas de terminar la primera seccion asi que dime ¿Cuál es el propósito principal de JavaScript en un navegador web?",
+      imagen:
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1701010795/lastproject/seccion1/w7rhyvrteqxlwg2eg6dw.png",
       opciones: [
         "Cambiar el estilo de las páginas web",
         "Realizar operaciones matemáticas complejas",
@@ -109,6 +125,8 @@ const Seccion1 = () => {
     {
       pregunta:
         "Al jefe no le gusta ser molestado dime ¿Cuál es la forma correcta de imprimir un mensaje en la consola de JavaScript?",
+      imagen:
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1701010795/lastproject/seccion1/w7rhyvrteqxlwg2eg6dw.png",
       opciones: [
         "console.print('Hola, mundo');",
         "console.log('Hola, mundo')",
@@ -135,7 +153,7 @@ const Seccion1 = () => {
   } = useQuiz(preguntas);
 
   const renderQuestion = () => {
-    const { pregunta, opciones } = getCurrentQuestion();
+    const { pregunta, opciones, imagen } = getCurrentQuestion();
     return (
       <ComponentQuestion
         pregunta={pregunta}
@@ -146,6 +164,8 @@ const Seccion1 = () => {
         handleAnswer={handleAnswer}
         decrementLife={decrementLife}
         life={life}
+        styleClass={"one"}
+        imagen={imagen}
       />
     );
   };

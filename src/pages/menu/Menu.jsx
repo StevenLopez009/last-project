@@ -1,9 +1,11 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay, faVolumeUp } from "@fortawesome/free-solid-svg-icons";
 import imagenHeroe from "../../assets/img/heroe.png";
 import audio from "../../assets/audio/audio.mp3";
 import music from "../../assets/audio/music.mp3";
 import useSound from "use-sound";
-import { useEffect, useState } from "react";
 import "./Menu.css";
 
 const Menu = () => {
@@ -14,6 +16,7 @@ const Menu = () => {
   const [playSound] = useSound(audio);
   const [playMusic, { stop }] = useSound(music, { volume: 0.5 });
   const [musicPlaying, setMusicPlaying] = useState(false);
+  const [escucharDisabled, setEscucharDisabled] = useState(false);
 
   const handleMusicClick = () => {
     if (!musicPlaying) {
@@ -31,6 +34,11 @@ const Menu = () => {
     }, 500);
   };
 
+  const handleEscuchar = () => {
+    playSound();
+    setEscucharDisabled(true);
+  };
+
   useEffect(() => {
     localStorage.setItem("ver", JSON.stringify(ver));
   }, [ver]);
@@ -45,7 +53,7 @@ const Menu = () => {
           </div>
           <div className="header__info-nivel">
             <h5>Nivel</h5>
-            <progress value="00" max="100"></progress>
+            <progress value="20" max="160"></progress>
           </div>
         </div>
       </header>
@@ -74,10 +82,11 @@ const Menu = () => {
         >
           <div className="texto-heroe">
             <p>
-              Hola jugador <br /> bienvenido, <br /> visita la biblioteca <br />
-              para aprender visita <br /> el cuartel para <br /> desbloquear los
-              personaje <br />
-              visita la taberna <br /> para mirar tus logros y compartirlos con{" "}
+              Bienvenido, <br /> visita la biblioteca <br />
+              para aprender
+              <br /> el cuartel para <br /> desbloquear los personajes <br />
+              visita la taberna <br /> para mirar tus <br /> logros y
+              compartirlos <br /> con
               <br /> tus amigos, cuando <br /> estes listo sarpa <br /> a la
               aventura desde <br /> el mapa
             </p>
@@ -85,10 +94,16 @@ const Menu = () => {
               onClick={handleContinuar}
               className="boton boton--continuar"
             >
-              Continuar
+              <FontAwesomeIcon icon={faPlay} />
             </button>
-            <button onClick={playSound} className="boton boton--escuchar">
-              Escuchar
+            <button
+              onClick={handleEscuchar}
+              className={`boton boton--escuchar ${
+                escucharDisabled ? "disabled" : ""
+              }`}
+              disabled={escucharDisabled}
+            >
+              <FontAwesomeIcon icon={faVolumeUp} />
             </button>
           </div>
           <img

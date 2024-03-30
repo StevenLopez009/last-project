@@ -92,8 +92,8 @@ progress::after {
 }
 .texto-heroe {
   position: absolute;
-  padding: 10px;
-  height: 40vh;
+  padding: 15px;
+  height: 50vh;
   width: 60%;
   bottom: 5vh;
   left: 2vh;
@@ -102,6 +102,7 @@ progress::after {
   text-align: left;
   font-family: sans-serif;
   font-size: 1.1rem;
+  border-radius: 10px;
 }
 .contenedor-heroe img {
   position: absolute;
@@ -211,6 +212,19 @@ progress::after {
   height: 3vh;
   width: 100px;
   padding-bottom: 30px;
+}
+
+.boton--escuchar {
+  width: 50px;
+  font-size: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.boton--continuar {
+  width: 50px;
+  font-size: 100%;
+  margin-top: 20px;
 }
 
 /*FOOTER*/

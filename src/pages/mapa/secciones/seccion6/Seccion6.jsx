@@ -123,9 +123,11 @@ const Seccion6 = () => {
 
   const {
     start,
+    life,
     showCorrection,
     showCongratulation,
     showFinal,
+    decrementLife,
     cambiarEstado,
     handleAnswer,
     handleNextQuestion,
@@ -142,6 +144,8 @@ const Seccion6 = () => {
         opcion3={opciones[2]}
         opcion4={opciones[3]}
         handleAnswer={handleAnswer}
+        decrementLife={decrementLife}
+        life={life}
       />
     );
   };

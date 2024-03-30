@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
 import ComponentLife from "./ComponentLife";
+import ComponentDeath from "./ComponentDeath";
+import "./styles/ComponentQuestion.css";
 
 const ComponentQuestion = ({
   pregunta,
@@ -10,17 +12,50 @@ const ComponentQuestion = ({
   handleAnswer,
   decrementLife,
   life,
+  styleClass,
+  imagen,
 }) => {
+  const blockName = "component-question";
+
   return (
     <>
-      <ComponentLife decrementLife={decrementLife} life={life} />
-      <div>
-        <p>{pregunta}</p>
-      </div>
-      <button onClick={() => handleAnswer(opcion1)}>{opcion1}</button>
-      <button onClick={() => handleAnswer(opcion2)}>{opcion2}</button>
-      <button onClick={() => handleAnswer(opcion3)}>{opcion3}</button>
-      <button onClick={() => handleAnswer(opcion4)}>{opcion4}</button>
+      {life > 0 ? (
+        <div className={`${blockName}__${styleClass}`}>
+          <ComponentLife decrementLife={decrementLife} life={life} />
+          <div className={`${blockName}__content `}>
+            <img className={`${blockName}__image`} src={imagen} alt="" />
+            <p className={`${blockName}__text ${styleClass}`}>{pregunta}</p>
+          </div>
+          <div className={`${blockName}__wrapper `}>
+            <button
+              className={`${blockName}__button ${styleClass}`}
+              onClick={() => handleAnswer(opcion1)}
+            >
+              {opcion1}
+            </button>
+            <button
+              className={`${blockName}__button ${styleClass}`}
+              onClick={() => handleAnswer(opcion2)}
+            >
+              {opcion2}
+            </button>
+            <button
+              className={`${blockName}__button ${styleClass}`}
+              onClick={() => handleAnswer(opcion3)}
+            >
+              {opcion3}
+            </button>
+            <button
+              className={`${blockName}__button ${styleClass}`}
+              onClick={() => handleAnswer(opcion4)}
+            >
+              {opcion4}
+            </button>
+          </div>
+        </div>
+      ) : (
+        <ComponentDeath />
+      )}
     </>
   );
 };
@@ -34,6 +69,7 @@ ComponentQuestion.propTypes = {
   handleAnswer: PropTypes.func.isRequired,
   decrementLife: PropTypes.func.isRequired,
   life: PropTypes.number.isRequired,
+  styleClass: PropTypes.string,
 };
 
 export default ComponentQuestion;
