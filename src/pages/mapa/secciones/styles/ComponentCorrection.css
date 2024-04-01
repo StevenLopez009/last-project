@@ -1,0 +1,101 @@
+.correction {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.correction__one {
+  background-image: url("../../../../assets/img/mapa/seccion1.jpg");
+}
+.correction__two {
+  background-image: url("../../../../assets/img/mapa/seccion2.jpg");
+}
+.correction__three {
+  background-image: url("../../../../assets/img/mapa/seccion3.jpg");
+}
+.correction__four {
+  background-image: url("../../../../assets/img/mapa/seccion4.jpg");
+}
+.correction__five {
+  background-image: url("../../../../assets/img/mapa/seccion5.jpg");
+}
+.correction__six {
+  background-image: url("../../../../assets/img/mapa/seccion6.jpg");
+}
+.correction__seven {
+  background-image: url("../../../../assets/img/mapa/seccion7.jpg");
+}
+.correction__eight {
+  background-image: url("../../../../assets/img/mapa/seccion8.jpg");
+}
+.correction__nine {
+  background-image: url("../../../../assets/img/mapa/seccion9.jpg");
+}
+.correction__ten {
+  background-image: url("../../../../assets/img/mapa/seccion10.jpg");
+}
+.correction__eleven {
+  background-image: url("../../../../assets/img/mapa/seccion11.jpg");
+}
+.correction__twelve {
+  background-image: url("../../../../assets/img/mapa/seccion12.jpg");
+}
+.correction__thirteen {
+  background-image: url("../../../../assets/img/mapa/seccion13.jpg");
+}
+.correction__fourteen {
+  background-image: url("../../../../assets/img/mapa/seccion14.jpg");
+}
+.correction__fifteen {
+  background-image: url("../../../../assets/img/mapa/seccion15.jpg");
+}
+.correction__sixteen {
+  background-image: url("../../../../assets/img/mapa/seccion16.jpg");
+}
+
+.correction__image {
+  height: 25vh;
+  object-fit: contain;
+}
+
+.correction__content {
+  width: 90%;
+  margin: 0 auto;
+  background-image: url("../../../../assets/img/mapa/fondobloque.png");
+  background-size: 100% 95%;
+  background-repeat: no-repeat;
+  height: 20vh;
+  overflow-x: auto;
+}
+
+.correction__text {
+  font-size: 1.2em;
+  text-align: left;
+  padding-top: 10px;
+  overflow-x: auto;
+  margin-top: 20px;
+  max-height: 90px;
+  color: white;
+  padding-left: 40px;
+  padding-right: 36px;
+}
+
+.correction__code {
+  width: 90%;
+}
+
+.correction__button {
+  background-image: url("../../../../assets/img/biblioteca/botono-green.png");
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  height: 9vh;
+  width: 240px;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 40px;
+}

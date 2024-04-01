@@ -20,7 +20,7 @@ const ComponentQuestion = ({
   return (
     <>
       {life > 0 ? (
-        <div className={`${blockName}__${styleClass}`}>
+        <div className={`${blockName} ${blockName}__${styleClass}`}>
           <ComponentLife decrementLife={decrementLife} life={life} />
           <div className={`${blockName}__content `}>
             <img className={`${blockName}__image`} src={imagen} alt="" />
@@ -69,6 +69,7 @@ ComponentQuestion.propTypes = {
   handleAnswer: PropTypes.func.isRequired,
   decrementLife: PropTypes.func.isRequired,
   life: PropTypes.number.isRequired,
+  imagen: PropTypes.string.isRequired,
   styleClass: PropTypes.string,
 };
 

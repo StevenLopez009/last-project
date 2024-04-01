@@ -1,0 +1,87 @@
+.congratulation {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.congratulation__one {
+  background-image: url("../../../../assets/img/mapa/seccion1.jpg");
+}
+.congratulation__two {
+  background-image: url("../../../../assets/img/mapa/seccion2.jpg");
+}
+.congratulation__three {
+  background-image: url("../../../../assets/img/mapa/seccion3.jpg");
+}
+.congratulation__four {
+  background-image: url("../../../../assets/img/mapa/seccion4.jpg");
+}
+.congratulation__five {
+  background-image: url("../../../../assets/img/mapa/seccion5.jpg");
+}
+.congratulation__six {
+  background-image: url("../../../../assets/img/mapa/seccion6.jpg");
+}
+.congratulation__seven {
+  background-image: url("../../../../assets/img/mapa/seccion7.jpg");
+}
+.congratulation__eight {
+  background-image: url("../../../../assets/img/mapa/seccion8.jpg");
+}
+.congratulation__nine {
+  background-image: url("../../../../assets/img/mapa/seccion9.jpg");
+}
+.congratulation__ten {
+  background-image: url("../../../../assets/img/mapa/seccion10.jpg");
+}
+.congratulation__eleven {
+  background-image: url("../../../../assets/img/mapa/seccion11.jpg");
+}
+.congratulation__twelve {
+  background-image: url("../../../../assets/img/mapa/seccion12.jpg");
+}
+.congratulation__thirteen {
+  background-image: url("../../../../assets/img/mapa/seccion13.jpg");
+}
+.congratulation__fourteen {
+  background-image: url("../../../../assets/img/mapa/seccion14.jpg");
+}
+.congratulation__fifteen {
+  background-image: url("../../../../assets/img/mapa/seccion15.jpg");
+}
+.congratulation__sixteen {
+  background-image: url("../../../../assets/img/mapa/seccion16.jpg");
+}
+.congratulation__image {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.congratulation__container {
+  background-image: url("../../../../assets/img/mapa/fondobloque.png");
+  background-size: 100% 95%;
+  background-repeat: no-repeat;
+  height: 20vh;
+}
+
+.congratulation__text {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  padding-top: 5vh;
+  color: white;
+}
+
+.congratulation__button {
+  background-image: url("../../../../assets/img/biblioteca/botono-green.png");
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  height: 9vh;
+  width: 240px;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 40px;
+  margin-top: 20vh;
+}

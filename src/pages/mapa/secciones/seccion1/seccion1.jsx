@@ -25,6 +25,7 @@ const Seccion1 = () => {
       respuestaCorrecta: "Un lenguaje para desarrollo web",
       correction:
         "Cometiste un error recuerda que JavaScript es un lenguaje de desarrollo web, JS se ejecuta en el navegador del usuario, permitiendo la interactividad en páginas web al manipular el contenido HTML y CSS. Además de su papel central en el desarrollo frontend",
+      imagenCorreccion: "",
     },
     {
       pregunta:
@@ -40,6 +41,8 @@ const Seccion1 = () => {
       respuestaCorrecta: "const nombre = valor;",
       correction:
         "En JavaScript, puedes declarar una constante utilizando la palabra clave const. La declaración de una constante se parece a la declaración de una variable, pero una vez que asignas un valor a una constante, no puedes reasignarle otro valor. Aquí tienes un ejemplo básico:",
+      imagenCorreccion:
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1705349663/lastproject/seccion1/x6ygebkcq36lzrxvtmzc.jpg",
     },
     {
       pregunta:
@@ -56,6 +59,8 @@ const Seccion1 = () => {
         "let se utiliza para variables mutables, mientras que const se utiliza para constantes inmutables.",
       correction:
         "En JavaScript, let y const son dos formas de declarar variables Con let, puedes reasignar valores a la variable después de su declaración inicial. Con const, una vez que asignas un valor a la variable, no puedes reasignarle otro valor. La variable será constante durante toda su vida útil.",
+      imagenCorreccion:
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1705349788/lastproject/seccion1/amo1vuylgfe2x1ho6jxf.jpg",
     },
     {
       pregunta:
@@ -71,6 +76,8 @@ const Seccion1 = () => {
       respuestaCorrecta: "No muestra ningun mensaje",
       correction:
         "Presta mucha atencion viajero a los detalles cuando una linea de codigo tiene dos lineas paralelas al inicio esta comentada , esto se hace para dejar explicaciones del codigo a posibles futuros viajeros que miren tu codigo ",
+      imagenCorreccion:
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1705349783/lastproject/seccion1/vo7gnczlgjvm2gzhy1tx.jpg",
     },
     {
       pregunta:
@@ -86,6 +93,8 @@ const Seccion1 = () => {
       respuestaCorrecta: "<script><script/>",
       correction:
         "hola viajero veo que te equivocaste aqui , mira es facil cuando vamos a enlazar un archivo JavaScript a tu html lo haremos con la etiqueta <script><script>, sigue jugando ",
+      imagenCorreccion:
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1707262617/lastproject/seccion1/ucvds3gntlfqk9icnesb.jpg",
     },
     {
       pregunta:
@@ -96,6 +105,8 @@ const Seccion1 = () => {
       respuestaCorrecta: "String",
       correction:
         'En JavaScript, los strings son tipos de datos que representan texto. Pueden contener letras, números, símbolos y espacios, y se definen encerrando el texto entre comillas simples (\') o dobles (""). Los strings son inmutables, lo que significa que no se pueden cambiar una vez creados.',
+      imagenCorreccion:
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1707262197/lastproject/seccion1/yk80uah9yx6k01zwrurm.jpg",
     },
     {
       pregunta:
@@ -106,6 +117,8 @@ const Seccion1 = () => {
       respuestaCorrecta: "comparando",
       correction:
         "El operador == compara los valores de dos expresiones, y devuelve true si son iguales y false si son diferentes. no compara el tipo de valor si no el dato ",
+      imagenCorreccion:
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1705350423/lastproject/seccion1/kghkhfpz81j21l8c3icp.jpg",
     },
     {
       pregunta:
@@ -121,6 +134,7 @@ const Seccion1 = () => {
       respuestaCorrecta: "Hacer que las páginas web sean interactivas",
       correction:
         "Recuerda que JavaScript se utiliza principalmente para agregar interactividad a las páginas web, permitiendo que respondan a las acciones del usuario. ",
+      imagenCorreccion: "",
     },
     {
       pregunta:
@@ -136,6 +150,8 @@ const Seccion1 = () => {
       respuestaCorrecta: "console.log('Hola, mundo')",
       correction:
         "La consola es un aliado que nos ayuda a mirar las salidas de nuestro codigo y lo ejecutamos asi console.log ('Hola, mundo'), ves que hacemos tambien uso de las cadenas de texto",
+      imagenCorreccion:
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1705350550/lastproject/seccion1/wpqoxqmk5yifsua2ypvf.jpg",
     },
   ];
 
@@ -171,15 +187,22 @@ const Seccion1 = () => {
   };
 
   const renderCongratulation = () => {
-    return <ComponentCongratulation handleNextQuestion={handleNextQuestion} />;
+    return (
+      <ComponentCongratulation
+        handleNextQuestion={handleNextQuestion}
+        styleClass={"one"}
+      />
+    );
   };
 
   const renderCorrection = () => {
-    const { correction } = getCurrentQuestion();
+    const { correction, imagenCorreccion } = getCurrentQuestion();
     return (
       <ComponentCorrection
         correction={correction}
         handleNextQuestion={handleNextQuestion}
+        imagenCorreccion={imagenCorreccion}
+        styleClass={"one"}
       />
     );
   };

@@ -98,14 +98,14 @@
   color: white;
 }
 .modal-content p {
-  text-align: justify;
+  text-align: left;
   overflow-x: auto;
   margin-top: 20px;
   max-height: 110px;
   color: white;
   padding-left: 36px;
   padding-right: 36px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .parrafo-content {
