@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.timer {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../../../assets/img/mapa/seccion16.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+.timer__header {
+  height: 200px;
+  background-image: url("../../../../assets/img/biblioteca/fondobloque.png");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 550px;
+  padding: 50px;
+  color: white;
+}

@@ -6,6 +6,8 @@ import ComponentCongratulation from "../ComponentCongratulation";
 import ComponentFinal from "../ComponentFinal";
 import { useSections } from "../../context/SectionContext";
 import { useQuiz } from "../../hook/useQuiz";
+import jefe from "../../../../assets/img/mapa/demon2.gif";
+import codigo from "../../../../assets/img/mapa/codigo2.png";
 
 const Seccion2 = () => {
   const { setVisibleThree } = useSections();
@@ -147,6 +149,10 @@ const Seccion2 = () => {
     },
   ];
 
+  const textoMonstruo = "texto2";
+  const prueba = "Que necesito para comentar el console.log()";
+  const respuesta = "//";
+
   const {
     start,
     life,
@@ -213,7 +219,14 @@ const Seccion2 = () => {
         ) : showCongratulation ? (
           renderCongratulation()
         ) : showFinal ? (
-          <ComponentFinal handleShowSection={handleShowSection} />
+          <ComponentFinal
+            handleShowSection={handleShowSection}
+            jefe={jefe}
+            textoMonstruo={textoMonstruo}
+            codigo={codigo}
+            prueba={prueba}
+            respuesta={respuesta}
+          />
         ) : (
           renderQuestion()
         )

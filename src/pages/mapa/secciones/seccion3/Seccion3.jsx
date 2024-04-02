@@ -6,6 +6,8 @@ import ComponentCongratulation from "../ComponentCongratulation";
 import ComponentFinal from "../ComponentFinal";
 import { useSections } from "../../context/SectionContext";
 import { useQuiz } from "../../hook/useQuiz";
+import jefe from "../../../../assets/img/mapa/demon3.gif";
+import codigo from "../../../../assets/img/mapa/codigo3.png";
 
 const Seccion3 = () => {
   const { setVisibleFour } = useSections();
@@ -147,14 +149,17 @@ const Seccion3 = () => {
       imagen:
         "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1701011621/lastproject/seccion3/vx4uvu9l5xymrprgn2hv.png",
       opciones: ["Anidación", "Encapsulación", "Concatenación", "Redefinición"],
-      respuestaCorrecta:
-        "Ejecutar un bloque de código si la condición es falsa.",
+      respuestaCorrecta: "Anidación",
       correction:
         "La anidación en JavaScript se refiere a la práctica de incluir una estructura dentro de otra. Puede implicar la anidación de funciones dentro de funciones, objetos dentro de objetos, arrays dentro de arrays, o combinaciones de estas estructuras.",
       imagenCorreccion:
         "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1705357175/lastproject/seccion3/wv0kntsqwg5ret8scwqs.jpg",
     },
   ];
+
+  const textoMonstruo = "texto2";
+  const prueba = "Que necesito para comentar el console.log()";
+  const respuesta = "//";
 
   const {
     start,
@@ -222,7 +227,14 @@ const Seccion3 = () => {
         ) : showCongratulation ? (
           renderCongratulation()
         ) : showFinal ? (
-          <ComponentFinal handleShowSection={handleShowSection} />
+          <ComponentFinal
+            handleShowSection={handleShowSection}
+            jefe={jefe}
+            textoMonstruo={textoMonstruo}
+            codigo={codigo}
+            prueba={prueba}
+            respuesta={respuesta}
+          />
         ) : (
           renderQuestion()
         )

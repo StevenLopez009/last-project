@@ -1,0 +1,46 @@
+.contenedor-secundario-taberna {
+  background-color: rgb(27, 26, 26);
+  height: 100vh;
+}
+
+.contenedor-perfil {
+  width: 100%;
+  margin: 0 auto;
+  height: 40vh;
+  background-image: url("../../assets/img/taberna/fondotaberna.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenedor-premios {
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-image: url("../../assets/img/taberna/fondo2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.premio {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.premio img {
+  height: 13vh;
+  padding: 0;
+}
+
+.div-order {
+  position: absolute;
+  left: 20px;
+  top: 70px;
+  height: 30vh;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+}

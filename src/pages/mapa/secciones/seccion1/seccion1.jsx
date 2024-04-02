@@ -1,11 +1,13 @@
 import ComponentPortada from "../../../ComponentPortada";
 import backgroundImage from "../../../../assets/img/mapa/seccion1.jpg";
+import jefe from "../../../../assets/img/mapa/demon1.gif";
 import ComponentQuestion from "../ComponentQuestion";
 import ComponentCorrection from "../ComponentCorrection";
 import ComponentCongratulation from "../ComponentCongratulation";
 import ComponentFinal from "../ComponentFinal";
 import { useSections } from "../../context/SectionContext";
 import { useQuiz } from "../../hook/useQuiz";
+import codigo from "../../../../assets/img/mapa/codigo1.jpg";
 
 const Seccion1 = () => {
   const { setVisibleTwo } = useSections();
@@ -155,6 +157,10 @@ const Seccion1 = () => {
     },
   ];
 
+  const textoMonstruo = "texto";
+  const prueba = "Que necesito para comentar el console.log()";
+  const respuesta = "//";
+
   const {
     start,
     life,
@@ -221,7 +227,14 @@ const Seccion1 = () => {
         ) : showCongratulation ? (
           renderCongratulation()
         ) : showFinal ? (
-          <ComponentFinal handleShowSection={handleShowSection} />
+          <ComponentFinal
+            handleShowSection={handleShowSection}
+            jefe={jefe}
+            textoMonstruo={textoMonstruo}
+            codigo={codigo}
+            prueba={prueba}
+            respuesta={respuesta}
+          />
         ) : (
           renderQuestion()
         )
