@@ -1,4 +1,136 @@
+.monster {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
 .challenge__code {
   width: 90%;
   margin: 0 auto;
+}
+.monster__div {
+  background-image: url("../../../../assets/img/mapa/seccionunomonster.jpg");
+  background-position: center center;
+  height: 60vh;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  padding: 20px;
+}
+.monster__one {
+  background-image: url("../../../../assets/img/mapa/seccionunomonster.jpg");
+}
+
+.monster__div img {
+  width: 95%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.monster__contain__text {
+  margin-top: -50px;
+  height: 200px;
+  background-image: url("../../../../assets/img/mapa/fondobloque.png");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-align: justify;
+  overflow-x: auto;
+  color: white;
+}
+.monster__contain__text p {
+  text-align: left;
+  overflow-x: auto;
+  margin-top: 40px;
+  max-height: 110px;
+  color: white;
+  padding-left: 56px;
+  padding-right: 36px;
+  font-size: 1.2rem;
+}
+.monster__contain__button {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+.monster__button {
+  text-align: center;
+  background-image: url("../../../../assets/img/mapa/buttonbiblio.png");
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 40px;
+  color: white;
+  border: none;
+  background-color: transparent;
+  width: 60%;
+  font-size: 1.2rem;
+}
+
+.challenge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.challenge__content__text {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  border-radius: 20px;
+  width: 80%;
+  font-size: 1.2rem;
+  margin-top: -60px;
+  text-align: center;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.challenge__code {
+  margin: 0 auto;
+  height: 150px;
+  object-fit: contain;
+}
+.challenge__input {
+  width: 90%;
+  height: 35px;
+  margin: 5px 0;
+}
+
+.challenge__verify-button {
+  background-size: 100% 95%;
+  height: 9vh;
+  width: 240px;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 40px;
+  background-image: url("../../../../assets/img/mapa/botonplay.png");
+}
+.challenge__success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30vh;
+}
+.challenge__parrafo {
+  text-align: center;
+  background-image: url("../../../../assets/img/mapa/buttonbiblio.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+  color: white;
+  border: none;
+  background-color: transparent;
+  width: 60%;
+  font-size: 1.2rem;
+  margin-top: -50px;
+  margin-bottom: 100px;
+}
+.challenge__next-button {
+  background-size: 100% 95%;
+  height: 9vh;
+  width: 240px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../../../../assets/img/mapa/botonplay.png");
 }

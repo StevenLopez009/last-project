@@ -157,9 +157,10 @@ const Seccion3 = () => {
     },
   ];
 
-  const textoMonstruo = "texto2";
-  const prueba = "Que necesito para comentar el console.log()";
-  const respuesta = "//";
+  const textoMonstruo =
+    "Soy Vulkaroth protector de fuego y funciones espero que tengas suficientes vidas para ofrecerme, los subditos de la reina sufrieron una envozcada poco antes de llegar aqui desconozco quienes raptaron a la reina , pero venderan las pertenencias de la reina en la ciudadela de los objetos";
+  const prueba = "Crea la Invocacion de esta funcion";
+  const respuesta = "saludar()";
 
   const {
     start,

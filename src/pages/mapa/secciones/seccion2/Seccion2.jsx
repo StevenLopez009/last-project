@@ -149,9 +149,10 @@ const Seccion2 = () => {
     },
   ];
 
-  const textoMonstruo = "texto2";
-  const prueba = "Que necesito para comentar el console.log()";
-  const respuesta = "//";
+  const textoMonstruo =
+    "Has ayudado a mis demonios en su trabajo , pero si no respondes bien te quedaras en mi cementerio para siempre, La reina Elfa cruzo por este cementerio llevaba a sus subditos hacia las tierras del fuego y las funciones";
+  const prueba = "¿Ques se muestra en este console.log?, no olvides las comas";
+  const respuesta = "2,4,6,8,10";
 
   const {
     start,
@@ -226,6 +227,7 @@ const Seccion2 = () => {
             codigo={codigo}
             prueba={prueba}
             respuesta={respuesta}
+            styleClass={"two"}
           />
         ) : (
           renderQuestion()

@@ -170,7 +170,8 @@ const Seccion15 = () => {
     },
   ];
 
-  const textoMonstruo = "texto2";
+  const textoMonstruo =
+    "no creas que te dare a tu reina tan facilmente si no respondes nunca la veras denuevo ";
   const prueba = "Que necesito para comentar el console.log()";
   const respuesta = "//";
 

@@ -163,9 +163,10 @@ const Seccion4 = () => {
     },
   ];
 
-  const textoMonstruo = "texto2";
-  const prueba = "Que necesito para comentar el console.log()";
-  const respuesta = "//";
+  const textoMonstruo =
+    "Soy Astrid, quieres rescatar a tu dulce reina estas muy lejos aun, dame tus vidas y olvidala, la reina fue vendida a un comprador por un buen precio si resuelves mi codigo podras ir al castillo de los arreglos es a donde la llevaron";
+  const prueba = "Como puedo acceder al valor de esta Posima";
+  const respuesta = "producto.precio";
 
   const {
     start,

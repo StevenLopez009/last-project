@@ -162,9 +162,10 @@ const Seccion9 = () => {
     },
   ];
 
-  const textoMonstruo = "texto2";
-  const prueba = "Que necesito para comentar el console.log()";
-  const respuesta = "//";
+  const textoMonstruo =
+    " Soy Xólotl, guardiana del asincronismo espero que tengas suficientes vidas para mi, tu reina la llevaron los orcos navegando hacia los errores de JavaScript";
+  const prueba = "Con cual metodo atrapo el error de la promesa";
+  const respuesta = "catch";
 
   const {
     start,

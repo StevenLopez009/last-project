@@ -151,9 +151,10 @@ const Seccion11 = () => {
     },
   ];
 
-  const textoMonstruo = "texto2";
-  const prueba = "Que necesito para comentar el console.log()";
-  const respuesta = "//";
+  const textoMonstruo =
+    "Bienvenido, valeroso viajero. Tus pasos en la arena del almacenamiento son evidencia de tu determinación y coraje. tu reina a sido llevada por estas mismas tierras de dunas cambiantes hacia las herrerias de las herramientas";
+  const prueba = "Necesito recuperar la clave de localstorage que me faltaria";
+  const respuesta = "getItem";
 
   const {
     start,

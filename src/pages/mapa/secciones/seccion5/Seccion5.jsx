@@ -123,9 +123,10 @@ const Seccion5 = () => {
     },
   ];
 
-  const textoMonstruo = "texto2";
-  const prueba = "Que necesito para comentar el console.log()";
-  const respuesta = "//";
+  const textoMonstruo =
+    "Hola viajero has llegado hasta mi castillo de arreglos acambio de tus vidas te dire que tu reina fue comprada por uno de mis generales los Elfos son muy buenos con la magia de JavaScript desconozco que pretende hacer con tu reina Elfa, fue llevada a las tierras del Golem DOM";
+  const prueba = "Necesito agregar 'Hada' al final de mi arreglo";
+  const respuesta = "criaturas.push('Hada')";
 
   const {
     start,

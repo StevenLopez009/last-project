@@ -154,7 +154,8 @@ const Seccion8 = () => {
     },
   ];
 
-  const textoMonstruo = "texto2";
+  const textoMonstruo =
+    "Soy Morgoth, protector de la tierra de la programación orientada a objetos, resuelve mi problema a cambio, te daré esta información. Tu reina fue llevada por los orcos al portal asincrono ya estas a medio camino";
   const prueba = "Que necesito para comentar el console.log()";
   const respuesta = "//";
 

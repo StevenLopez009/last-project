@@ -6,6 +6,7 @@ import ComponentCongratulation from "../ComponentCongratulation";
 import ComponentFinal from "../ComponentFinal";
 import { useSections } from "../../context/SectionContext";
 import { useQuiz } from "../../hook/useQuiz";
+import ComponentReina from "../ComponentReina";
 
 const Seccion16 = () => {
   const { setVisibleSixteen } = useSections();
@@ -215,7 +216,7 @@ const Seccion16 = () => {
         ) : showCongratulation ? (
           renderCongratulation()
         ) : showFinal ? (
-          <ComponentFinal handleShowSection={handleShowSection} />
+          <ComponentReina />
         ) : (
           renderQuestion()
         )

@@ -148,9 +148,10 @@ const Seccion6 = () => {
     },
   ];
 
-  const textoMonstruo = "texto2";
-  const prueba = "Que necesito para comentar el console.log()";
-  const respuesta = "//";
+  const textoMonstruo =
+    "Soy Gravex, Golem del Dom , tu reina fue traída por un Orco muy poderoso soluciono mi codigo y continuo su camino pretende llevar tu reina Elfa muy lejos a travez de los portales Fetch , deberas darte prisa";
+  const prueba = "Necesito agregar el evento para el click de este boton";
+  const respuesta = "addEventListener";
 
   const {
     start,

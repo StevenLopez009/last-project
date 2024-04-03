@@ -148,9 +148,10 @@ const Seccion7 = () => {
     },
   ];
 
-  const textoMonstruo = "texto2";
-  const prueba = "Que necesito para comentar el console.log()";
-  const respuesta = "//";
+  const textoMonstruo =
+    "Soy Epsilon , guardian del portal de las peticiones Fetch espero que tengas lo necesario o pagaras con tus vidas, El Orco que secuestro tu reina utilizo el portal fetch para viajar a la tierra de programacion orientada a objetos";
+  const prueba = "Necesito retornar la respuesta en formato JSON";
+  const respuesta = "return response.json()";
 
   const {
     start,

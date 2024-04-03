@@ -153,9 +153,10 @@ const Seccion14 = () => {
     },
   ];
 
-  const textoMonstruo = "texto2";
-  const prueba = "Que necesito para comentar el console.log()";
-  const respuesta = "//";
+  const textoMonstruo =
+    "estas tan cerca viajero tu reina esta aqui nada mas hace solo unas horas los orcos la llevaron por estos mares al parecer la reina orco planea utlizar la magia de la reina elfa para aumentar su poder ayudame con mi codigo y te dejare avanzar";
+  const prueba = "Necesito exportar esta funcion que me faltaria";
+  const respuesta = "export";
 
   const {
     start,

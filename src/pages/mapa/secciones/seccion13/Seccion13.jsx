@@ -123,9 +123,10 @@ const Seccion13 = () => {
     },
   ];
 
-  const textoMonstruo = "texto2";
-  const prueba = "Que necesito para comentar el console.log()";
-  const respuesta = "//";
+  const textoMonstruo =
+    "Viajero has llegado muy lejos en busca de tu reina si te sirve de algo tu reina a sido llevada por los orcos a los mares lejanos donde planean hacer un ritual con ella , responde mi codigo y te dejare navegar ";
+  const prueba = "¿Cual es este framework de JavaScript ?";
+  const respuesta = "angular";
 
   const {
     start,

@@ -123,9 +123,10 @@ const Seccion12 = () => {
     },
   ];
 
-  const textoMonstruo = "texto2";
-  const prueba = "Que necesito para comentar el console.log()";
-  const respuesta = "//";
+  const textoMonstruo =
+    "soy el herrero los orcos me compraron muchas armas si me ayudas con mi condigo te dejare ir a los mares de sirenas donde llevaron a tu reina";
+  const prueba = "Cual es este entorno de desarrollo para react";
+  const respuesta = "vite";
 
   const {
     start,

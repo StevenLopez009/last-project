@@ -157,7 +157,8 @@ const Seccion1 = () => {
     },
   ];
 
-  const textoMonstruo = "texto";
+  const textoMonstruo =
+    "Soy Nihilus , primer protector de la isla, veo que has vencido a mis ayudantes, pero si no solucionas mi código, tomaré todas tus Vidas, tu reina Elfa cruzo este valle con sus subditos estaba en busqueda de algo muy valioso";
   const prueba = "Que necesito para comentar el console.log()";
   const respuesta = "//";
 
@@ -234,6 +235,7 @@ const Seccion1 = () => {
             codigo={codigo}
             prueba={prueba}
             respuesta={respuesta}
+            styleClass={"one"}
           />
         ) : (
           renderQuestion()

@@ -153,9 +153,10 @@ const Seccion10 = () => {
     },
   ];
 
-  const textoMonstruo = "texto2";
-  const prueba = "Que necesito para comentar el console.log()";
-  const respuesta = "//";
+  const textoMonstruo =
+    "Soy Nokthor, protector del pantano de los errores, la información que tengo vale tus vidas o la solución de mi código. A cambio, te dire que tu reina fue llevada al desierto del almacenamiento.";
+  const prueba = "Necesito imprimir en consola el error";
+  const respuesta = "console.error";
 
   const {
     start,
