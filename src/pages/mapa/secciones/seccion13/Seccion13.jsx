@@ -184,7 +184,7 @@ const Seccion13 = () => {
     setVisibleFourteen(true);
   };
 
-  const titulo = "Portal Fetch";
+  const titulo = "Frameworks y librerias";
 
   return (
     <>

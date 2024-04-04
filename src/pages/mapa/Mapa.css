@@ -1,5 +1,5 @@
 .sections {
-  background-color: red;
+  background-color: rgb(0, 0, 0);
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -12,4 +12,64 @@
   height: 20vh;
   margin: 10px auto;
   background-color: aqua;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.seccion__one {
+  background-image: url("../../assets/img/mapa/linkOne.jpg");
+}
+
+.seccion__two {
+  background-image: url("../../assets/img/mapa/linkTwo.jpg");
+}
+
+.seccion__three {
+  background-image: url("../../assets/img/mapa/linkThree.jpg");
+}
+.seccion__four {
+  background-image: url("../../assets/img/mapa/linkFour.jpg");
+}
+.seccion__five {
+  background-image: url("../../assets/img/mapa/linkFive.jpg");
+}
+.seccion__six {
+  background-image: url("../../assets/img/mapa/linkSix.jpg");
+}
+.seccion__seven {
+  background-image: url("../../assets/img/mapa/linkSeven.jpg");
+}
+.seccion__eight {
+  background-image: url("../../assets/img/mapa/linkEight.jpg");
+}
+.seccion__nine {
+  background-image: url("../../assets/img/mapa/linkNine.jpg");
+}
+.seccion__ten {
+  background-image: url("../../assets/img/mapa/linkTen.jpg");
+}
+.seccion__eleven {
+  background-image: url("../../assets/img/mapa/linkEleven.jpg");
+}
+.seccion__twelve {
+  background-image: url("../../assets/img/mapa/linkTwelve.jpg");
+}
+.seccion__thirteen {
+  background-image: url("../../assets/img/mapa/linkThirteen.jpg");
+}
+.seccion__fourteen {
+  background-image: url("../../assets/img/mapa/linkForteen.jpg");
+}
+.seccion__fifteen {
+  background-image: url("../../assets/img/mapa/linkFifteen.jpg");
+}
+.seccion__sixteen {
+  background-image: url("../../assets/img/mapa/linkSixteen.jpg");
 }

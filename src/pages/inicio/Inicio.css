@@ -5,8 +5,8 @@
 }
 
 .div-splash {
-  background-image: url("../../assets/img/inicio.jfif");
-  background-position: center center;
+  background-image: url("../../assets/img/inicio.jpg");
+  background-position: center bottom;
   background-repeat: no-repeat;
   height: 100vh;
   min-width: 100%;
@@ -14,13 +14,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0;
+  padding: 20px 0 40px 0;
 }
 
 .logo-inicio {
   width: 80%;
   height: 60vh;
-  margin-top: -40px;
+  margin-top: -100px;
+  object-fit: contain;
 }
 
 .btn-inicio {

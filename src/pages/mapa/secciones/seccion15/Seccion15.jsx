@@ -7,6 +7,7 @@ import ComponentFinal from "../ComponentFinal";
 import { useSections } from "../../context/SectionContext";
 import { useQuiz } from "../../hook/useQuiz";
 import jefe from "../../../../assets/img/mapa/demon15.gif";
+import codigo from "../../../../assets/img/mapa/codigo14.jpeg";
 
 const Seccion15 = () => {
   const { setVisibleSixteen } = useSections();
@@ -72,7 +73,7 @@ const Seccion15 = () => {
         "Cookies seguras (Secure Cookies)",
         "Content Security Policy (Política de Seguridad de Contenido)",
         "Cors Policy (Política de Compartición de Recursos)",
-        "Same-Origin Policy (Política del Mismo Origen).",
+        "Same-Origin Policy (Política del Mismo Origen)",
       ],
       respuestaCorrecta: "Same-Origin Policy (Política del Mismo Origen)",
       correction:
@@ -173,7 +174,7 @@ const Seccion15 = () => {
   const textoMonstruo =
     "no creas que te dare a tu reina tan facilmente si no respondes nunca la veras denuevo ";
   const prueba = "Que necesito para comentar el console.log()";
-  const respuesta = "//";
+  const respuesta = "export";
 
   const {
     start,

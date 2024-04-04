@@ -7,6 +7,7 @@ import ComponentFinal from "../ComponentFinal";
 import { useSections } from "../../context/SectionContext";
 import { useQuiz } from "../../hook/useQuiz";
 import jefe from "../../../../assets/img/mapa/demon8.gif";
+import codigo from "../../../../assets/img/mapa/codigo7.jpeg";
 
 const Seccion8 = () => {
   const { setVisibleNine } = useSections();
