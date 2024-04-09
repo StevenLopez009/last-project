@@ -165,6 +165,7 @@ const Seccion2 = () => {
     handleAnswer,
     handleNextQuestion,
     getCurrentQuestion,
+    timer,
   } = useQuiz(preguntas);
 
   const renderQuestion = () => {
@@ -181,6 +182,7 @@ const Seccion2 = () => {
         life={life}
         styleClass={"two"}
         imagen={imagen}
+        timer={timer}
       />
     );
   };

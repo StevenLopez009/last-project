@@ -1,0 +1,43 @@
+.component-reina {
+  background-image: url("../../../../assets/img/mapa/reinaJS.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-end;
+}
+.component-reina__header {
+  background-color: #fac24e;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 60vh;
+}
+.component-reina__title {
+  font-size: 2rem;
+  color: black;
+}
+
+.component-reina__content {
+  height: 200px;
+  background-image: url("../../../../assets/img/biblioteca/fondobloque.png");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding-top: 40px;
+}
+
+.component-reina__content p {
+  text-align: left;
+  overflow-x: auto;
+  max-height: 110px;
+  color: white;
+  padding-left: 46px;
+  padding-right: 36px;
+  font-size: 1.2rem;
+}

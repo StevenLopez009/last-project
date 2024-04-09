@@ -10,7 +10,6 @@ const ComponentQuestion = ({
   opcion3,
   opcion4,
   handleAnswer,
-  decrementLife,
   life,
   styleClass,
   imagen,
@@ -21,7 +20,7 @@ const ComponentQuestion = ({
     <>
       {life > 0 ? (
         <div className={`${blockName} ${blockName}__${styleClass}`}>
-          <ComponentLife decrementLife={decrementLife} life={life} />
+          <ComponentLife life={life} styleClass={styleClass} />
           <div className={`${blockName}__content `}>
             <img className={`${blockName}__image`} src={imagen} alt="" />
             <p className={`${blockName}__text ${styleClass}`}>{pregunta}</p>
@@ -71,6 +70,7 @@ ComponentQuestion.propTypes = {
   life: PropTypes.number.isRequired,
   imagen: PropTypes.string.isRequired,
   styleClass: PropTypes.string,
+  timer: PropTypes.number,
 };
 
 export default ComponentQuestion;

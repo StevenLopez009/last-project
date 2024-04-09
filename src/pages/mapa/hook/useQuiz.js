@@ -11,6 +11,8 @@ export const useQuiz = (preguntas) => {
     return storedLife ? JSON.parse(storedLife) : 6;
   });
 
+  const [timer, setTimer] = useState(30);
+
   useEffect(() => {
     localStorage.setItem("life", JSON.stringify(life));
   }, [life]);
@@ -25,6 +27,29 @@ export const useQuiz = (preguntas) => {
     }
   }, [life]);
 
+  useEffect(() => {
+    let interval;
+
+    if (
+      start &&
+      timer > 0 &&
+      !showCorrection &&
+      !showCongratulation &&
+      life > 0
+    ) {
+      interval = setInterval(() => {
+        setTimer((prevTimer) => prevTimer - 1);
+      }, 1000);
+    }
+
+    if (timer === 0 && !showCorrection && !showCongratulation) {
+      handleAnswer(null);
+      setTimer(30);
+    }
+
+    return () => clearInterval(interval);
+  }, [start, timer, showCorrection, showCongratulation, life]);
+
   const cambiarEstado = () => {
     setStart(true);
   };
@@ -34,6 +59,7 @@ export const useQuiz = (preguntas) => {
   };
 
   const handleAnswer = (selectedOption) => {
+    clearInterval(timer);
     if (selectedOption === preguntas[currentQuestion].respuestaCorrecta) {
       setShowCongratulation(true);
     } else {
@@ -45,6 +71,7 @@ export const useQuiz = (preguntas) => {
   const handleNextQuestion = () => {
     setShowCorrection(false);
     setShowCongratulation(false);
+    setTimer(30);
     if (currentQuestion < preguntas.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
@@ -75,5 +102,6 @@ export const useQuiz = (preguntas) => {
     handleNextQuestion,
     resetQuiz,
     getCurrentQuestion,
+    timer,
   };
 };

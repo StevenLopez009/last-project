@@ -8,8 +8,10 @@ import { useSections } from "../../context/SectionContext";
 import { useQuiz } from "../../hook/useQuiz";
 import jefe from "../../../../assets/img/mapa/demon4.gif";
 import codigo from "../../../../assets/img/mapa/codigo4.jpeg";
+import { usePremio } from "../../context/PremioContext";
 
 const Seccion4 = () => {
+  const { premio, updatePremio } = usePremio();
   const { setVisibleFive } = useSections();
 
   const preguntas = [
@@ -241,6 +243,7 @@ const Seccion4 = () => {
             codigo={codigo}
             prueba={prueba}
             respuesta={respuesta}
+            premio={premio}
           />
         ) : (
           renderQuestion()

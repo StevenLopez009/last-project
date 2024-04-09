@@ -3,14 +3,11 @@ import backgroundImage from "../../../../assets/img/mapa/seccion16.jpg";
 import ComponentQuestion from "../ComponentQuestion";
 import ComponentCorrection from "../ComponentCorrection";
 import ComponentCongratulation from "../ComponentCongratulation";
-import ComponentFinal from "../ComponentFinal";
-import { useSections } from "../../context/SectionContext";
+
 import { useQuiz } from "../../hook/useQuiz";
 import ComponentReina from "../ComponentReina";
 
 const Seccion16 = () => {
-  const { setVisibleSixteen } = useSections();
-
   const preguntas = [
     {
       pregunta:
@@ -200,10 +197,6 @@ const Seccion16 = () => {
         styleClass={"sixteen"}
       />
     );
-  };
-
-  const handleShowSection = () => {
-    setVisibleSixteen(true);
   };
 
   const titulo = "Optimizacion";

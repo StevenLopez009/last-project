@@ -7,6 +7,7 @@ import audio from "../../assets/audio/audio.mp3";
 import music from "../../assets/audio/music.mp3";
 import useSound from "use-sound";
 import "./Menu.css";
+import { PremioProvider } from "../mapa/context/PremioContext";
 
 const Menu = () => {
   const [ver, setVer] = useState(() => {
