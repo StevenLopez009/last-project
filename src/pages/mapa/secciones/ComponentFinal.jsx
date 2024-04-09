@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles/ComponentFinal.css";
-import { usePremio } from "../context/PremioContext";
 
 const ComponentFinal = ({
   handleShowSection,
@@ -11,30 +10,10 @@ const ComponentFinal = ({
   prueba,
   respuesta,
   styleClass,
-  premio,
 }) => {
   const [visible, setVisible] = useState(false);
   const [userInput, setUserInput] = useState("");
   const [isCorrect, setIsCorrect] = useState(false);
-
-  const { updatePremio, updatePremioTwo, updatePremioThree, updatePremioFour } =
-    usePremio();
-
-  const handleChangePremio = () => {
-    updatePremio(true);
-  };
-
-  const handleChangePremioTwo = () => {
-    updatePremioTwo(true);
-  };
-
-  const handleChangePremioThree = () => {
-    updatePremioThree(true);
-  };
-
-  const handleChangePremioFour = () => {
-    updatePremioFour(true);
-  };
 
   const handleVisible = () => {
     setVisible(true);

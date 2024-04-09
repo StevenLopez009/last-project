@@ -6,14 +6,14 @@ import premiodosImg from "../../assets/img/taberna/premiodos.png";
 import premiotresImg from "../../assets/img/taberna/premiotres.png";
 import premiocuatroImg from "../../assets/img/taberna/premiocuatro.png";
 import "./Taberna.css";
-import { usePremio } from "../mapa/context/PremioContext";
+import { useSections } from "../mapa/context/SectionContext";
 
 const Taberna = () => {
   const [start, setStart] = useState(false);
-  const { premio } = usePremio();
-  const { premioTwo } = usePremio();
-  const { premioThree } = usePremio();
-  const { premioFour } = usePremio();
+  const { visibleFive } = useSections();
+  const { visibleNine } = useSections();
+  const { visibleThirteen } = useSections();
+  const { visibleFifteen } = useSections();
 
   const cambiarEstado = () => {
     setStart(true);
@@ -27,25 +27,25 @@ const Taberna = () => {
           <div className="contenedor-perfil"></div>
           <div className="contenedor-premios">
             <div className="div-order">
-              {premio ? (
+              {visibleFive ? (
                 <div className="premio premio-1">
                   <img src={premiounoImg} alt="" />
                   <h4>Premio Basico</h4>
                 </div>
               ) : null}
-              {premioTwo ? (
+              {visibleNine ? (
                 <div className="premio premio-2">
                   <img src={premiodosImg} alt="" />
                   <h4>Premio Intermedio</h4>
                 </div>
               ) : null}
-              {premioThree ? (
+              {visibleThirteen ? (
                 <div className="premio premio-3">
                   <img src={premiotresImg} alt="" />
                   <h4>Premio Avanzado</h4>
                 </div>
               ) : null}
-              {premioFour ? (
+              {visibleFifteen ? (
                 <div className="premio premio-4">
                   <img src={premiocuatroImg} alt="" />
                   <h4>Premio Legenda</h4>

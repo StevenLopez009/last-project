@@ -7,7 +7,7 @@ import ComponentFinal from "../ComponentFinal";
 import { useSections } from "../../context/SectionContext";
 import { useQuiz } from "../../hook/useQuiz";
 import jefe from "../../../../assets/img/mapa/demon3.gif";
-import codigo from "../../../../assets/img/mapa/codigo3.png";
+import codigo from "../../../../assets/img/mapa/codigo3.jpeg";
 
 const Seccion3 = () => {
   const { setVisibleFour } = useSections();
@@ -36,7 +36,7 @@ const Seccion3 = () => {
         "talves no seas tan novato con las funciones , lo pondre un poco mas dificil como se llaman los valores que van en los parentesis de la funcion",
       imagen:
         "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1701011621/lastproject/seccion3/fbs8lu9kmeqnlx5ruu7u.png",
-      opciones: ["pass", "argument", "parameters", "return"],
+      opciones: ["pass", "valors", "parameters", "return"],
       respuestaCorrecta: "parameters",
       correction:
         "Los parámetros de una función son valores que la función espera recibir cuando es llamada. Estos valores se utilizan dentro del cuerpo de la función para realizar operaciones o cálculos. Los parámetros permiten que una función sea flexible y pueda manejar diferentes valores cada vez que es invocada",
@@ -158,7 +158,7 @@ const Seccion3 = () => {
   ];
 
   const textoMonstruo =
-    "Soy Vulkaroth protector de fuego y funciones espero que tengas suficientes vidas para ofrecerme, los subditos de la reina sufrieron una envozcada poco antes de llegar aqui desconozco quienes raptaron a la reina , pero venderan las pertenencias de la reina en la ciudadela de los objetos";
+    "Soy Vulkaroth protector de fuego y funciones espero que tengas suficientes vidas para ofrecerme, los subditos de la reina sufrieron una envozcada poco antes de llegar aqui desconozco quienes raptaron a la reina , pero venderan las pertenencias de la reina en el castillo de de los arreglos pasando primero el dragon de los objetos";
   const prueba = "Crea la Invocacion de esta funcion";
   const respuesta = "saludar()";
 

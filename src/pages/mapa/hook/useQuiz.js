@@ -42,7 +42,7 @@ export const useQuiz = (preguntas) => {
       }, 1000);
     }
 
-    if (timer === 0 && !showCorrection && !showCongratulation) {
+    if (timer === 0 && !showCorrection && !showCongratulation && !showFinal) {
       handleAnswer(null);
       setTimer(30);
     }

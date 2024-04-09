@@ -158,7 +158,7 @@ const Seccion1 = () => {
   ];
 
   const textoMonstruo =
-    "Soy Nihilus , primer protector de la isla, veo que has vencido a mis ayudantes, pero si no solucionas mi código, tomaré todas tus Vidas, tu reina Elfa cruzo este valle con sus subditos estaba en busqueda de algo muy valioso";
+    "Soy Nihilus , primer protector de la isla, veo que has vencido a mis ayudantes, pero si no solucionas mi código, no te dejare avanzar, tu reina Elfa cruzo este valle con sus subditos hacia el cementerio de las estructuras de control";
   const prueba = "Que necesito para comentar el console.log()";
   const respuesta = "//";
 

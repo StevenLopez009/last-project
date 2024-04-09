@@ -7,7 +7,7 @@ import ComponentFinal from "../ComponentFinal";
 import { useSections } from "../../context/SectionContext";
 import { useQuiz } from "../../hook/useQuiz";
 import jefe from "../../../../assets/img/mapa/demon2.gif";
-import codigo from "../../../../assets/img/mapa/codigo2.png";
+import codigo from "../../../../assets/img/mapa/codigo2.jpeg";
 
 const Seccion2 = () => {
   const { setVisibleThree } = useSections();
@@ -35,7 +35,7 @@ const Seccion2 = () => {
       correction:
         "La estructura switch en JavaScript se utiliza para realizar múltiples comparaciones sobre el valor de una expresión y ejecutar diferentes bloques de código según el caso coincidente. La sintaxis básica es la siguiente",
       imagenCorreccion:
-        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1705352670/lastproject/seccion2/eh3weew2mxlppmeb54mp.jpg",
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1712682559/lastproject/seccion2/ohhkkfpyfkbzjw0ngymy.jpg",
     },
     {
       pregunta:
@@ -127,7 +127,7 @@ const Seccion2 = () => {
       correction:
         "La palabra clave break en JavaScript se utiliza para salir de un bucle prematuramente, deteniendo su ejecución incluso si la condición de finalización del bucle no se ha cumplido.",
       imagenCorreccion:
-        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1705354033/lastproject/seccion2/o71c6idkczncz9nxtxss.jpg",
+        "https://res.cloudinary.com/dyvk6gcjy/image/upload/v1712682783/lastproject/seccion2/qry7cthxpmx9lyczd0l0.jpg",
     },
     {
       pregunta:
@@ -212,7 +212,7 @@ const Seccion2 = () => {
     setVisibleThree(true);
   };
 
-  const titulo = "Cementerio de las  Estructuras de control";
+  const titulo = "Cementerio Estructuras de control";
 
   return (
     <>
