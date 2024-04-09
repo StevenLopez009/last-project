@@ -1,6 +1,10 @@
-import { precacheAndRoute } from "workbox-precaching";
-import { registerRoute } from "workbox-routing";
-import { StaleWhileRevalidate } from "workbox-strategies";
+importScripts(
+  "https://storage.googleapis.com/workbox-cdn/releases/6.3.0/workbox-sw.js"
+);
+
+const { precacheAndRoute } = workbox.precaching;
+const { registerRoute } = workbox.routing;
+const { StaleWhileRevalidate } = workbox.strategies;
 
 precacheAndRoute(self.__WB_MANIFEST);
 
