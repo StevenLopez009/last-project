@@ -1,9 +1,7 @@
 .container-secundario {
   height: 100vh;
   width: 100%;
-  background-image: url("../../assets/cuartel/img/fondocuartel.jpg");
-  object-fit: contain;
-  background-position: center center;
+  background-color: rgb(0, 0, 0);
 }
 
 .container-hero {
@@ -22,7 +20,7 @@
   width: 95%;
   height: 30vh;
   margin: 0 auto;
-  background-color: brown;
+  background-color: #fac24e;
   border-radius: 10px;
 }
 
@@ -56,15 +54,25 @@
 
 .container-info-two {
   color: white;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 20px;
   text-align: justify;
+  height: 15vh;
 }
 
+.container-info-two p {
+  font-size: 1rem;
+  color: black;
+}
+.container-info-two a {
+  color: aliceblue;
+  font-size: 1.2rem;
+}
 .container-buttons {
+  height: 5vh;
   display: flex;
   justify-content: space-around;
-  margin-top: 10px;
 }
 
 .container-buttons button {

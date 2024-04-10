@@ -2,7 +2,14 @@ import "./Cuartel.css";
 import lifeHero from "../../assets/img/cuartel/lifehero.png";
 import damageimg from "../../assets/img/cuartel/damage.png";
 
-const InfoHero = ({ life, damage, handleBackHero, handleNextHero, info }) => {
+const InfoHero = ({
+  life,
+  damage,
+  handleBackHero,
+  handleNextHero,
+  info,
+  link,
+}) => {
   return (
     <div className="container-info">
       <div className="container-info-one ">
@@ -17,6 +24,9 @@ const InfoHero = ({ life, damage, handleBackHero, handleNextHero, info }) => {
       </div>
       <div className="container-info-two">
         <p>{info}</p>
+        <a href={link} target="_blank">
+          click aqui
+        </a>
       </div>
       <div className="container-buttons">
         <button onClick={handleBackHero}>Back</button>

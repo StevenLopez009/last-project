@@ -21,19 +21,22 @@ const Cuartel = () => {
       img: heroImage1,
       life: 2000,
       damage: 2000,
-      info: "Lyra. Armada con una espada que reluce , esta Programadora intrépida desafía la marea de sombras que amenaza con consumir su mundo. Lyra, vestida en una armadura que fusiona las artes misticas de JavaScript",
+      info: `Hola soy la programadora Lyra, tengo varios consejos para ti en tu camino hacia aprender JavaScript. Puedes dirigirte aqui para descargar el milenario libro de JavaScript`,
+      link: "https://eloquentjs-es.thedojo.mx/Eloquent_JavaScript.pdf",
     },
     {
       img: heroImage2,
       life: 1500,
       damage: 1800,
-      info: "Conocido como Arion, este intrépido Programador, marcado por la valentía y la nobleza. Su mirada intensa refleja la determinación forjada en incontables batallas, mientras empuña una espada imbuida con el poder ancestral de JavaScript",
+      info: "Hola soy Arion , existe un programador legendario llamado Jon Mircha busca su nombre en youtube y sigue su camino  y aprenderas JavaScript",
+      link: "https://www.youtube.com/watch?v=2SetvwBV-SU&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA",
     },
     {
       img: heroImage3,
       life: 4000,
       damage: 3000,
-      info: "Aria dotada de habilidades sobresalientes y una determinación inquebrantable, se erige como una Programadora poderosa, recordándonos que incluso en la adversidad más sombría se puede codificar ",
+      info: "Hola soy Ania, todo lenguaje tiene una documentacion aqui te dejare la llave hacia la documentacion  de Javascript ",
+      link: "https://developer.mozilla.org/es/docs/Web/JavaScript",
     },
   ];
 
@@ -64,6 +67,7 @@ const Cuartel = () => {
               handleBackHero={handleBackHero}
               handleNextHero={handleNextHero}
               info={currentHero.info}
+              link={currentHero.link}
             />
           </div>
         </>
