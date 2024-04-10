@@ -21,7 +21,7 @@ const Cuartel = () => {
       img: heroImage1,
       life: 2000,
       damage: 2000,
-      info: `Hola soy la programadora Lyra, tengo varios consejos para ti en tu camino hacia aprender JavaScript. Puedes dirigirte aqui para descargar el milenario libro de JavaScript`,
+      info: `Hola soy la programadora Lyra, Puedes dirigirte aqui para descargar el milenario libro de JavaScript`,
       link: "https://eloquentjs-es.thedojo.mx/Eloquent_JavaScript.pdf",
     },
     {
