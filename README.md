@@ -4,17 +4,17 @@ Bienvenido a este proyecto, un juego desarrollado en React diseñado para enseñ
 Instrucciones para el Backend (Strapi)
 Abre la consola en la raíz del proyecto.
 Ejecuta el siguiente comando para iniciar el servidor de desarrollo de Strapi:
-bash
-Copy code
+
 npm run develop
+
 Instrucciones para el Frontend
 Una vez que el backend esté en funcionamiento, puedes iniciar el servidor de desarrollo del frontend con los siguientes pasos:
 
 Abre la consola en la raíz del proyecto.
 Ejecuta el siguiente comando:
-bash
-Copy code
+
 npm run dev
+
 Esto montará el servidor de desarrollo en tu navegador, permitiéndote jugar y aprender JavaScript al mismo tiempo.
 
 ¡Diviértete aprendiendo con nuestro juego!
